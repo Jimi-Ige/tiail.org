@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Early Instruments — TIAIL</title>
+<meta name="description" content="Pre-validation research artifacts and prototypes from the Trauma Informed AI Lab. Grounded in active studies. Released for review, critique, and partnership." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css" />
+</head>
+<body data-density="dense">
+
+<div class="bg"></div>
+<div class="bg-accent"></div>
+<div class="bg-grid"></div>
+
+<!-- ──────────────── HEADER (shared layout) ──────────────── -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="wordmark">
+      <a href="/">
+        <div class="wordmark-tile">
+          <img src="/assets/nest-and-rise.png" alt="Nest and Rise" />
+        </div>
+        <div class="wordmark-text">
+          <div class="wordmark-main">TIAIL</div>
+          <div class="wordmark-sub">Trauma Informed AI Lab</div>
+        </div>
+      </a>
+    </div>
+    <nav class="nav">
+      <a href="/#framework">Framework</a>
+      <a href="/#applications">Applications</a>
+      <a href="/#programs">Programs</a>
+      <a href="/#charter">Charter</a>
+      <a href="/early-instruments/" class="active">Instruments</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ──────────────── BAND 1 — HERO ──────────────── -->
+<section class="section">
+  <div class="wrap">
+    <div class="hero-eyebrow">Early Instruments</div>
+    <h1 class="hero-title">The research, <em>made testable.</em></h1>
+    <p class="hero-body">
+      AI systems are already making consequential decisions in domestic violence intake, clinical
+      triage, and social services. Most were not designed for those settings. None were evaluated
+      against trauma-informed standards before deployment. The people exposed to those decisions
+      carry the cost. TIAIL builds and tests the instruments that change that.
+    </p>
+    <div class="audience-routing">
+      <div class="audience-row">
+        <div class="audience-role">Funder or partner</div>
+        <div class="audience-direction">Stakes each instrument is designed to address sit in its body. Contact: <a href="mailto:hello@tiail.org">hello@tiail.org</a></div>
+      </div>
+      <div class="audience-row">
+        <div class="audience-role">Researcher</div>
+        <div class="audience-direction">Tests and methodology sit in the research-meta block. Critique welcome</div>
+      </div>
+      <div class="audience-row">
+        <div class="audience-role">Developer</div>
+        <div class="audience-direction">Tech cards open the developer entry. Repo: <a href="https://github.com/Jimi-Ige/trauma-informed-ai-lab" target="_blank" rel="noopener">github.com/Jimi-Ige/trauma-informed-ai-lab</a></div>
+      </div>
+      <div class="audience-row">
+        <div class="audience-role">Practitioner</div>
+        <div class="audience-direction">"How to access" on each instrument names what you need</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ──────────────── BAND 2 — TRACK 01: RESEARCH ARTIFACTS ──────────────── -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head track-head">
+      <div class="sec-n">Track 01</div>
+      <div>
+        <div class="sec-label">Research Artifacts</div>
+        <h2 class="sec-title">Grounded in active studies.</h2>
+        <div class="sec-intro">
+          Pre-validation instruments grounded in active studies, released so they can be tested
+          against the settings they would govern. IRB-governed field validation is the next stage.
+          The conditions these instruments are designed to act on belong in the research; if your
+          organization works in those settings, contact us.
+        </div>
+      </div>
+    </div>
+
+    <div class="instrument-list">
+
+      <!-- ARTIFACT 01 — Crisis Support Framework -->
+      <article class="instrument" id="artifact-01">
+        <div class="instrument-row">
+          <div class="instrument-index">Artifact 01 / Research Artifact</div>
+          <h3 class="instrument-title">Crisis Support Framework</h3>
+        </div>
+        <div class="instrument-row">
+          <div class="instrument-gutter-label">Body</div>
+          <div class="instrument-body-text">
+            <p>Domestic violence intake workers make life-safety triage decisions with no AI decision support designed for their setting. The tools that exist were built for adjacent contexts, have not been evaluated against trauma-informed standards, and in documented cases have caused harm through misclassification. The cost of that gap is measured in survivor outcomes.</p>
+            <p>A four-person intern cohort spent three months building a trauma-informed AI framework for DV intake settings, with privacy and safety as primary design constraints from day one. A lived-experience advisor shaped the design criteria and holds formal authorship. Language conventions followed the National Network to End Domestic Violence's style guidance throughout.</p>
+            <p>This is the first completed instrument in TIAIL's pipeline and a direct output of the flagship scoping review. A second cohort is continuing the iteration.</p>
+          </div>
+        </div>
+        <div class="instrument-row">
+          <div class="instrument-gutter-label">Research meta</div>
+          <div class="research-meta-list">
+            <div class="research-meta-row">
+              <div class="research-meta-label">Grounding</div>
+              <div class="research-meta-value">Flagship Scoping Review: AI Systems in Domestic Violence Settings</div>
+            </div>
+            <div class="research-meta-row">
+              <div class="research-meta-label">Tests</div>
+              <div class="research-meta-value">What design constraints are necessary and sufficient for a trauma-informed AI framework in DV intake?</div>
+            </div>
+            <div class="research-meta-row">
+              <div class="research-meta-label">Generates</div>
+              <div class="research-meta-value">Design criteria feed into scoping review gap analysis; failure modes documented as research findings; practitioner feedback incorporated into cohort 2 iteration</div>
+            </div>
+          </div>
+        </div>
+        <div class="instrument-row">
+          <div class="instrument-gutter-label">Tech card</div>
+          <div class="tech-card">
+            <div class="tech-row">
+              <div class="tech-label">Built with</div>
+              <div class="tech-value">Python · Claude API · NNEDV language guidelines</div>
+            </div>
+            <div class="tech-row">
+              <div class="tech-label">Architecture</div>
+              <div class="tech-value">Framework document + prototype decision-support interface</div>
+            </div>
+            <div class="tech-row">
+              <div class="tech-label">Access</div>
+              <div class="tech-value"><a href="https://github.com/Jimi-Ige/trauma-informed-ai" target="_blank" rel="noopener">github.com/Jimi-Ige/trauma-informed-ai</a></div>
+            </div>
+            <div class="tech-row">
+              <div class="tech-label">Status</div>
+              <div class="tech-value">
+                <div class="tech-badges">
+                  <span class="tech-badge">Pre-validation</span>
+                  <span class="tech-badge">Cohort 2 iteration active</span>
+                </div>
+              </div>
+            </div>
+            <div class="tech-row">
+              <div class="tech-label">Contribute</div>
+              <div class="tech-value">Issues open · PRs welcome</div>
+            </div>
+          </div>
+        </div>
+        <div class="instrument-row">
+          <div class="instrument-gutter-label">How to access</div>
+          <div class="practitioner-block">
+            <p class="practitioner-text">No setup required. Open in any browser. Takes approximately 20 minutes for a full framework review. Leave structured feedback via the repo form or email <a href="mailto:hello@tiail.org">hello@tiail.org</a>. No GitHub account needed.</p>
+          </div>
+        </div>
+        <div class="instrument-row">
+          <div class="instrument-gutter-label">Actions</div>
+          <div class="cta-row">
+            <a class="cta-btn primary" href="https://github.com/Jimi-Ige/trauma-informed-ai" target="_blank" rel="noopener">Read the framework</a>
+            <a class="cta-btn" href="https://github.com/Jimi-Ige/trauma-informed-ai" target="_blank" rel="noopener">View repo</a>
+            <a class="cta-btn" href="mailto:hello@tiail.org">Submit practitioner feedback</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ARTIFACT 02 — Bias Audit Rubric -->
+      <article class="instrument" id="artifact-02">
+        <div class="instrument-row">
+          <div class="instrument-index">Artifact 02 / Research Artifact</div>
+          <h3 class="instrument-title">Bias Audit Rubric</h3>
+        </div>
+        <div class="instrument-row">
+          <div class="instrument-gutter-label">Body</div>
+          <div class="instrument-body-text">
+            <p>Standard AI bias audits measure statistical parity across demographic groups. That is necessary. It is not sufficient for systems operating in crisis settings, where harm can occur through interactions that are statistically neutral but structurally unsafe for someone in acute distress or with prior trauma with institutional systems.</p>
+            <p>This rubric translates the SAMHSA six principles of trauma-informed care into structured audit criteria for AI systems in health and social services. Designed for procurement officers, program directors, and clinical informaticists, not only researchers. Each criterion includes a clinical literacy note explaining the SAMHSA principle it derives from and why it matters operationally.</p>
+            <p>A note on who should use this: the rubric is only as honest as the person administering it. We built it for people who are willing to find problems, not confirm compliance.</p>
+            <p>Open instrument. No intake required. Anyone with a system to audit can use it.</p>
+          </div>
+        </div>
+        <div class="instrument-row">
+          <div class="instrument-gutter-label">Research meta</div>
+          <div class="research-meta-list">
+            <div class="research-meta-row">
+              <div class="research-meta-label">Grounding</div>
+              <div class="research-meta-value">Trauma-Informed Evaluation Pillar: SAMHSA Six Principles Operationalization</div>
+            </div>
+            <div class="research-meta-row">
+              <div class="research-meta-label">Tests</div>
+              <div class="research-meta-value">Can the SAMHSA six principles be operationalized as auditable system requirements for clinical AI?</div>
+            </div>
+            <div class="research-meta-row">
+              <div class="research-meta-label">Generates</div>
+              <div class="research-meta-value">Empirical data on how existing systems perform against TI standards; builds evaluation pillar evidence base; informs policy recommendations</div>
+            </div>
+          </div>
+        </div>
+        <div class="instrument-row">
+          <div class="instrument-gutter-label">Tech card</div>
+          <div class="tech-card">
+            <div class="tech-row">
+              <div class="tech-label">Built with</div>
+              <div class="tech-value">Structured rubric · PDF and web versions</div>
+            </div>
+            <div class="tech-row">
+              <div class="tech-label">Architecture</div>
+              <div class="tech-value">Six-dimension evaluation framework derived from SAMHSA TIC principles</div>
+            </div>
+            <div class="tech-row">
+              <div class="tech-label">Access</div>
+              <div class="tech-value"><a href="https://github.com/Jimi-Ige/trauma-informed-ai-lab/rubric" target="_blank" rel="noopener">github.com/Jimi-Ige/trauma-informed-ai-lab/rubric</a></div>
+            </div>
+            <div class="tech-row">
+              <div class="tech-label">Status</div>
+              <div class="tech-value">
+                <div class="tech-badges">
+                  <span class="tech-badge">Pre-validation</span>
+                  <span class="tech-badge">Open for field use</span>
+                </div>
+              </div>
+            </div>
+            <div class="tech-row">
+              <div class="tech-label">Contribute</div>
+              <div class="tech-value">Submit audit results via form · Methodology critique welcome</div>
+            </div>
+          </div>
+        </div>
+        <div class="instrument-row">
+          <div class="instrument-gutter-label">How to access</div>
+          <div class="practitioner-block">
+            <p class="practitioner-text">Available as a PDF download and web-based form. No login required. An audit takes approximately 45 minutes for a single AI system. Results can be submitted anonymously or with attribution. Aggregate findings published quarterly.</p>
+          </div>
+        </div>
+        <div class="instrument-row">
+          <div class="instrument-gutter-label">Actions</div>
+          <div class="cta-row">
+            <a class="cta-btn primary" href="https://github.com/Jimi-Ige/trauma-informed-ai-lab/rubric" target="_blank" rel="noopener">Use the rubric</a>
+            <a class="cta-btn disabled" href="[PDF link]" aria-disabled="true">Download PDF</a>
+            <a class="cta-btn" href="mailto:hello@tiail.org">Submit audit results</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ARTIFACT 03 — DV AI Risk Assessment Evaluation Framework -->
+      <article class="instrument" id="artifact-03">
+        <div class="instrument-row">
+          <div class="instrument-index">Artifact 03 / Research Artifact</div>
+          <h3 class="instrument-title">DV AI Risk Assessment Evaluation Framework</h3>
+        </div>
+        <div class="instrument-row">
+          <div class="instrument-gutter-label">Body</div>
+          <div class="instrument-body-text">
+            <p>AI-assisted risk assessment tools are being used in domestic violence intake settings today. Most were not designed for that context. None have been evaluated against trauma-informed standards. Procurement decisions are being made on the basis of vendor claims, not empirical evidence.</p>
+            <p>This framework is the primary structured output of TIAIL's flagship scoping review. It provides evaluation criteria for AI risk assessment tools in DV settings, grounded in the literature the scoping review has mapped, calibrated to the SAMHSA six principles, and designed for program directors, clinical supervisors, and funders evaluating vendor proposals now.</p>
+            <p>Current status: pre-validation draft released for practitioner and researcher critique. Final version will incorporate full scoping review synthesis and lived-experience advisor input.</p>
+          </div>
+        </div>
+        <div class="instrument-row">
+          <div class="instrument-gutter-label">Research meta</div>
+          <div class="research-meta-list">
+            <div class="research-meta-row">
+              <div class="research-meta-label">Grounding</div>
+              <div class="research-meta-value">Flagship Scoping Review: AI Systems in Domestic Violence Settings</div>
+            </div>
+            <div class="research-meta-row">
+              <div class="research-meta-label">Tests</div>
+              <div class="research-meta-value">What evaluation criteria are necessary for safe deployment of AI risk assessment tools in DV intake?</div>
+            </div>
+            <div class="research-meta-row">
+              <div class="research-meta-label">Generates</div>
+              <div class="research-meta-value">Field critique feeds directly into scoping review synthesis; gaps identified by practitioners become documented research findings</div>
+            </div>
+          </div>
+        </div>
+        <div class="instrument-row">
+          <div class="instrument-gutter-label">Tech card</div>
+          <div class="tech-card">
+            <div class="tech-row">
+              <div class="tech-label">Built with</div>
+              <div class="tech-value">Structured evaluation framework · Markdown and PDF</div>
+            </div>
+            <div class="tech-row">
+              <div class="tech-label">Architecture</div>
+              <div class="tech-value">Multi-criteria decision framework mapped to TIC principles and DV-specific risk literature</div>
+            </div>
+            <div class="tech-row">
+              <div class="tech-label">Access</div>
+              <div class="tech-value"><a href="https://github.com/Jimi-Ige/trauma-informed-ai-lab/dv-evaluation" target="_blank" rel="noopener">github.com/Jimi-Ige/trauma-informed-ai-lab/dv-evaluation</a></div>
+            </div>
+            <div class="tech-row">
+              <div class="tech-label">Status</div>
+              <div class="tech-value">
+                <div class="tech-badges">
+                  <span class="tech-badge">Pre-validation draft</span>
+                  <span class="tech-badge">Critique actively sought</span>
+                </div>
+              </div>
+            </div>
+            <div class="tech-row">
+              <div class="tech-label">Contribute</div>
+              <div class="tech-value">GitHub issues · <a href="mailto:hello@tiail.org">hello@tiail.org</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="instrument-row">
+          <div class="instrument-gutter-label">How to access</div>
+          <div class="practitioner-block">
+            <p class="practitioner-text">Available as a PDF and fillable web form. Designed for a program director or clinical supervisor evaluating a vendor proposal or existing deployment. Takes approximately one hour. Submit critique anonymously if preferred. Attribution available on request.</p>
+          </div>
+        </div>
+        <div class="instrument-row">
+          <div class="instrument-gutter-label">Actions</div>
+          <div class="cta-row">
+            <a class="cta-btn primary" href="https://github.com/Jimi-Ige/trauma-informed-ai-lab/dv-evaluation" target="_blank" rel="noopener">Review the framework</a>
+            <a class="cta-btn" href="mailto:hello@tiail.org">Submit critique</a>
+            <a class="cta-btn" href="https://github.com/Jimi-Ige/trauma-informed-ai-lab/dv-evaluation" target="_blank" rel="noopener">View repo</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ARTIFACT 04 — Trauma-Informed Research Conduct Guide -->
+      <article class="instrument" id="artifact-04">
+        <div class="instrument-row">
+          <div class="instrument-index">Artifact 04 / Research Artifact</div>
+          <h3 class="instrument-title">Trauma-Informed Research Conduct Guide</h3>
+        </div>
+        <div class="instrument-row">
+          <div class="instrument-gutter-label">Body</div>
+          <div class="instrument-body-text">
+            <p>Research that aggregates survivor case material without trauma-informed conduct standards is not methodologically neutral. It exposes contributors to vicarious trauma, reproduces extractive research dynamics with communities, and compromises the validity of findings by treating the research process itself as outside the scope of ethical design.</p>
+            <p>TIAIL built the infrastructure we needed and could not find elsewhere. Contents: contributor briefing protocols for researchers handling sensitive source material, opt-out provisions at every stage, debriefing access pathways, survivor-centered language conventions based on NNEDV guidance, lived-experience advisor integration with formal compensation and authorship recognition templates, and a five-type review taxonomy governing all TIAIL research output.</p>
+            <p>We are publishing it because the field needs it. Any research team working on AI in health and social services can use it, adapt it, and build on it.</p>
+            <p>Open instrument. No intake required.</p>
+          </div>
+        </div>
+        <div class="instrument-row">
+          <div class="instrument-gutter-label">Research meta</div>
+          <div class="research-meta-list">
+            <div class="research-meta-row">
+              <div class="research-meta-label">Grounding</div>
+              <div class="research-meta-value">TIAIL Methodological Infrastructure: Trauma-Informed Research Conduct Standards</div>
+            </div>
+            <div class="research-meta-row">
+              <div class="research-meta-label">Tests</div>
+              <div class="research-meta-value">What conduct standards are necessary for trauma-informed validity in AI research involving survivor populations?</div>
+            </div>
+            <div class="research-meta-row">
+              <div class="research-meta-label">Generates</div>
+              <div class="research-meta-value">Field adoption creates a comparative evidence base for trauma-informed vs. standard research conduct, publishable as a methods contribution</div>
+            </div>
+          </div>
+        </div>
+        <div class="instrument-row">
+          <div class="instrument-gutter-label">Tech card</div>
+          <div class="tech-card">
+            <div class="tech-row">
+              <div class="tech-label">Built with</div>
+              <div class="tech-value">Markdown documentation · PDF · Version-controlled</div>
+            </div>
+            <div class="tech-row">
+              <div class="tech-label">Architecture</div>
+              <div class="tech-value">Modular protocol library; adopt in full or by component</div>
+            </div>
+            <div class="tech-row">
+              <div class="tech-label">Access</div>
+              <div class="tech-value"><a href="https://github.com/Jimi-Ige/trauma-informed-ai-lab/conduct-guide" target="_blank" rel="noopener">github.com/Jimi-Ige/trauma-informed-ai-lab/conduct-guide</a></div>
+            </div>
+            <div class="tech-row">
+              <div class="tech-label">Status</div>
+              <div class="tech-value">
+                <div class="tech-badges">
+                  <span class="tech-badge">V1.0 published</span>
+                  <span class="tech-badge">Accepting field adaptations</span>
+                </div>
+              </div>
+            </div>
+            <div class="tech-row">
+              <div class="tech-label">Contribute</div>
+              <div class="tech-value">Submit adaptations and field notes via GitHub or email</div>
+            </div>
+          </div>
+        </div>
+        <div class="instrument-row">
+          <div class="instrument-gutter-label">How to access</div>
+          <div class="practitioner-block">
+            <p class="practitioner-text">Download the full guide or individual protocol components. Each component is written for a research coordinator or program manager without a research methods background. If your organization adapts any component, share what you changed and why. That feedback improves the next version for everyone.</p>
+          </div>
+        </div>
+        <div class="instrument-row">
+          <div class="instrument-gutter-label">Actions</div>
+          <div class="cta-row">
+            <a class="cta-btn primary" href="https://github.com/Jimi-Ige/trauma-informed-ai-lab/conduct-guide" target="_blank" rel="noopener">Download the guide</a>
+            <a class="cta-btn disabled" href="[citation link]" aria-disabled="true">Cite this artifact</a>
+            <a class="cta-btn" href="https://github.com/Jimi-Ige/trauma-informed-ai-lab/conduct-guide" target="_blank" rel="noopener">View repo</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ──────────────── BAND 3 — TRACK 02: PROTOTYPES (dark palette) ──────────────── -->
+<section class="section section-dark">
+  <div class="wrap">
+    <div class="sec-head track-head">
+      <div class="sec-n">Track 02</div>
+      <div>
+        <div class="sec-label">Prototypes</div>
+        <h2 class="sec-title">In development. <em>Partnership-seeking.</em></h2>
+        <div class="sec-intro">
+          What these prototypes test cannot be settled by a demo. Each card names the research
+          question that has to be answered against the conditions the prototype would actually
+          operate in. Clinical partners and research funding are how that answer gets generated.
+        </div>
+      </div>
+    </div>
+
+    <div class="instrument-list">
+
+      <!-- PROTOTYPE 01 — Trauma-Informed DV Intake Decision Support -->
+      <article class="instrument" id="prototype-01">
+        <div class="instrument-row">
+          <div class="instrument-index">Prototype 01 / Prototype</div>
+          <h3 class="instrument-title">Trauma-Informed DV Intake Decision Support</h3>
+        </div>
+        <div class="instrument-row">
+          <div class="instrument-gutter-label">Body</div>
+          <div class="instrument-body-text">
+            <p>DV intake workers make safety-critical decisions (risk escalation, service matching, safety planning) under acute time pressure with no AI decision support built for their workflow. The tools that exist were designed for adjacent settings and require a level of technical fluency most frontline workers do not have and should not need.</p>
+            <p>This prototype is a retrieval and decision support system built specifically for DV intake. It surfaces trauma-informed care guidance and risk criteria at the moment of need, designed to integrate into existing case management workflows without adding cognitive load. Initial architecture is built over the literature corpus mapped by the flagship scoping review.</p>
+          </div>
+        </div>
+        <div class="instrument-row">
+          <div class="instrument-gutter-label">Research meta</div>
+          <div class="research-meta-list">
+            <div class="research-meta-row">
+              <div class="research-meta-label">Grounding</div>
+              <div class="research-meta-value">Flagship Scoping Review: AI Systems in Domestic Violence Settings</div>
+            </div>
+            <div class="research-meta-row">
+              <div class="research-meta-label">Tests</div>
+              <div class="research-meta-value">Does surfacing trauma-informed guidance at point of need change practitioner decision-making in DV intake, and in what direction?</div>
+            </div>
+            <div class="research-meta-row">
+              <div class="research-meta-label">Funding need</div>
+              <div class="research-meta-value">Clinical partnership · IRB protocol development · Field validation study</div>
+            </div>
+            <div class="research-meta-row">
+              <div class="research-meta-label">Timeline</div>
+              <div class="research-meta-value">Field deployment target Q1 2027 pending partnership confirmation</div>
+            </div>
+          </div>
+        </div>
+        <div class="instrument-row">
+          <div class="instrument-gutter-label">Tech card</div>
+          <div class="tech-card">
+            <div class="tech-row">
+              <div class="tech-label">Built with</div>
+              <div class="tech-value">Claude API · RAG architecture · Vector store over TIC + DV literature corpus</div>
+            </div>
+            <div class="tech-row">
+              <div class="tech-label">Architecture</div>
+              <div class="tech-value">Retrieval-augmented generation: query interface over curated clinical and DV literature</div>
+            </div>
+            <div class="tech-row">
+              <div class="tech-label">Access</div>
+              <div class="tech-value"><a href="https://github.com/Jimi-Ige/trauma-informed-ai-lab/dv-decision-support" target="_blank" rel="noopener">github.com/Jimi-Ige/trauma-informed-ai-lab/dv-decision-support</a></div>
+            </div>
+            <div class="tech-row">
+              <div class="tech-label">Status</div>
+              <div class="tech-value">
+                <div class="tech-badges">
+                  <span class="tech-badge">Pre-validation architecture complete</span>
+                  <span class="tech-badge">Clinical partner required</span>
+                </div>
+              </div>
+            </div>
+            <div class="tech-row">
+              <div class="tech-label">Contribute</div>
+              <div class="tech-value">Architecture review · Methodology critique welcome</div>
+            </div>
+          </div>
+        </div>
+        <div class="instrument-row">
+          <div class="instrument-gutter-label">Partnership</div>
+          <div class="partnership-callout">
+            <p class="partnership-text">Whether surfacing trauma-informed guidance at point of need actually changes practitioner decision-making in DV intake, and in what direction, can only be answered against real intake conditions. Operational knowledge from a DV services organization shapes this prototype, not just its evaluation. Contact: <a href="mailto:hello@tiail.org">hello@tiail.org</a>.</p>
+          </div>
+        </div>
+        <div class="instrument-row">
+          <div class="instrument-gutter-label">Actions</div>
+          <div class="cta-row">
+            <a class="cta-btn primary" href="mailto:hello@tiail.org">Inquire about partnership</a>
+            <a class="cta-btn disabled" href="[methodology link]" aria-disabled="true">Read the methodology</a>
+            <a class="cta-btn" href="https://github.com/Jimi-Ige/trauma-informed-ai-lab/dv-decision-support" target="_blank" rel="noopener">View repo</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROTOTYPE 02 — SDoH Risk Stratification -->
+      <article class="instrument" id="prototype-02">
+        <div class="instrument-row">
+          <div class="instrument-index">Prototype 02 / Prototype</div>
+          <h3 class="instrument-title">SDoH Risk Stratification</h3>
+        </div>
+        <div class="instrument-row">
+          <div class="instrument-gutter-label">Body</div>
+          <div class="instrument-body-text">
+            <p>Social determinants of health (housing instability, food insecurity, transportation access) are routinely absent from the clinical risk models acting on the populations they most affect. The model sees a risk score. It does not see an eviction notice. That omission is a design choice with measurable consequences.</p>
+            <p>First-pass analysis against publicly available datasets showed material reclassification of risk scores for approximately 23% of cases when SDoH variables were added, concentrated in populations already identified as underserved. That number is preliminary. The point is to make the consequence of omission empirically undeniable rather than a theoretical concern.</p>
+          </div>
+        </div>
+        <div class="instrument-row">
+          <div class="instrument-gutter-label">Research meta</div>
+          <div class="research-meta-list">
+            <div class="research-meta-row">
+              <div class="research-meta-label">Grounding</div>
+              <div class="research-meta-value">TIAIL Field Deployment Pillar: SDoH Variable Inclusion in Clinical Risk Models</div>
+            </div>
+            <div class="research-meta-row">
+              <div class="research-meta-label">Tests</div>
+              <div class="research-meta-value">What changes in clinical risk stratification outcomes when SDoH variables are systematically included?</div>
+            </div>
+            <div class="research-meta-row">
+              <div class="research-meta-label">Funding need</div>
+              <div class="research-meta-value">Clinical dataset access · Field validation partnership · IRB protocol</div>
+            </div>
+            <div class="research-meta-row">
+              <div class="research-meta-label">Timeline</div>
+              <div class="research-meta-value">Field deployment target Q2 2027 pending partnership and data access</div>
+            </div>
+          </div>
+        </div>
+        <div class="instrument-row">
+          <div class="instrument-gutter-label">Tech card</div>
+          <div class="tech-card">
+            <div class="tech-row">
+              <div class="tech-label">Built with</div>
+              <div class="tech-value">Python · scikit-learn · CDC PLACES · AHRQ public datasets</div>
+            </div>
+            <div class="tech-row">
+              <div class="tech-label">Architecture</div>
+              <div class="tech-value">Classification pipeline with SDoH variable injection and comparative scoring</div>
+            </div>
+            <div class="tech-row">
+              <div class="tech-label">Access</div>
+              <div class="tech-value"><a href="https://github.com/Jimi-Ige/trauma-informed-ai-lab/sdoh-stratification" target="_blank" rel="noopener">github.com/Jimi-Ige/trauma-informed-ai-lab/sdoh-stratification</a></div>
+            </div>
+            <div class="tech-row">
+              <div class="tech-label">Status</div>
+              <div class="tech-value">
+                <div class="tech-badges">
+                  <span class="tech-badge">Pre-validation</span>
+                  <span class="tech-badge">Built against public datasets</span>
+                  <span class="tech-badge">Clinical data required</span>
+                </div>
+              </div>
+            </div>
+            <div class="tech-row">
+              <div class="tech-label">Contribute</div>
+              <div class="tech-value">Methodology critique · Dataset suggestions welcome</div>
+            </div>
+          </div>
+        </div>
+        <div class="instrument-row">
+          <div class="instrument-gutter-label">Partnership</div>
+          <div class="partnership-callout">
+            <p class="partnership-text">The 23% reclassification figure is a signal, not a finding. Whether systematic SDoH variable inclusion produces durable changes in clinical risk stratification outcomes can only be answered against clinical data and the operational realities of programs acting on those scores. Partners in Medicaid, housing services, or community health shape this work. Contact: <a href="mailto:hello@tiail.org">hello@tiail.org</a>.</p>
+          </div>
+        </div>
+        <div class="instrument-row">
+          <div class="instrument-gutter-label">Actions</div>
+          <div class="cta-row">
+            <a class="cta-btn primary" href="mailto:hello@tiail.org">Inquire about partnership</a>
+            <a class="cta-btn disabled" href="[methodology link]" aria-disabled="true">Read the methodology</a>
+            <a class="cta-btn" href="https://github.com/Jimi-Ige/trauma-informed-ai-lab/sdoh-stratification" target="_blank" rel="noopener">View repo</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ──────────────── BAND 4 — PUBLIC RESOURCES ──────────────── -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head track-head">
+      <div class="sec-n">Public Resources</div>
+      <div>
+        <div class="sec-label">Field infrastructure</div>
+        <h2 class="sec-title">Monitoring infrastructure for the field.</h2>
+        <div class="sec-intro">
+          Not instruments in the research sense. Published because they are needed for
+          procurement, compliance, and deployment decisions happening right now, and the lab is
+          positioned to maintain them.
+        </div>
+      </div>
+    </div>
+
+    <div class="instrument-list">
+
+      <!-- RESOURCE 01 — AI Regulation Tracker -->
+      <article class="instrument" id="resource-01">
+        <div class="instrument-row">
+          <div class="instrument-index">Resource 01 / Public Resource</div>
+          <h3 class="instrument-title">AI Regulation Tracker</h3>
+        </div>
+        <div class="instrument-row">
+          <div class="instrument-gutter-label">Body</div>
+          <div class="instrument-body-text">
+            <p>Procurement criteria, deployment restrictions, and compliance requirements for AI in health and social services are being written now. What gets defined in this window will govern these systems for a decade.</p>
+            <p>This tracker monitors active federal and state legislation, agency guidance, and international frameworks relevant to trauma-informed AI governance, annotated for relevance to nonprofit and public agency operators, not only legal teams. Current coverage: 14 active federal frameworks, 6 state-level initiatives, 3 international governance instruments. Updated quarterly.</p>
+          </div>
+        </div>
+        <div class="instrument-row">
+          <div class="instrument-gutter-label">Tech card</div>
+          <div class="tech-card">
+            <div class="tech-row">
+              <div class="tech-label">Built with</div>
+              <div class="tech-value">Airtable · Public web · Manual curation</div>
+            </div>
+            <div class="tech-row">
+              <div class="tech-label">Architecture</div>
+              <div class="tech-value">Annotated regulatory database with relevance scoring for health and social services operators</div>
+            </div>
+            <div class="tech-row">
+              <div class="tech-label">Access</div>
+              <div class="tech-value"><a href="/regulation-tracker">tiail.org/regulation-tracker</a></div>
+            </div>
+            <div class="tech-row">
+              <div class="tech-label">Contribute</div>
+              <div class="tech-value">Submit a framework via <a href="mailto:hello@tiail.org">hello@tiail.org</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="instrument-row">
+          <div class="instrument-gutter-label">Actions</div>
+          <div class="cta-row">
+            <a class="cta-btn primary disabled" href="/regulation-tracker" aria-disabled="true">View tracker</a>
+            <a class="cta-btn" href="https://substack.com/@nestandrise?r=5ml7id&amp;utm_campaign=profile&amp;utm_medium=profile-page" target="_blank" rel="noopener">Subscribe to updates</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ──────────────── FOOTER (shared layout) ──────────────── -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <div class="footer-tile"><img src="/assets/nest-and-rise.png" alt="" /></div>
+        <div>
+          <div class="footer-wm-main">TIAIL</div>
+          <div class="footer-wm-sub">Trauma Informed AI Lab</div>
+        </div>
+      </div>
+      <div class="footer-desc">
+        A 501(c)(3) research institute based in Baltimore, MD. A program of Nest and Rise, Inc.
+        Trauma-informed governance for AI systems that carry consequence.
+      </div>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-head">Research</div>
+      <a href="#">Papers</a>
+      <a href="#">Notes</a>
+      <a href="#">Methods</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-head">Institute</div>
+      <a href="/">About</a>
+      <a href="#">Leadership</a>
+      <a href="/early-instruments/">Instruments</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-head">Contact</div>
+      <a href="mailto:hello@tiail.org">Inquiries</a>
+      <a href="mailto:hello@tiail.org">Press</a>
+      <a href="mailto:hello@tiail.org">Grants</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Trauma Informed AI Lab · Nest and Rise, Inc.</span>
+    <a href="https://github.com/Jimi-Ige/tiail.org">github.com/Jimi-Ige/tiail.org →</a>
+  </div>
+</footer>
+
+</body>
+</html>
